@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API_Test</title>
+</head>
+<body>
+    <div>
+        <p>添加Event：</p>
+        <form action="/api/add_event/" method="post">
+            EventId:<br>
+            <input type="text" placeholder="eid" name="eid"><br>
+            Name:<br>
+            <input type="text" placeholder="name" name="name"><br>
+            Limit:<br>
+            <input type="text" placeholder="limit" name="limit"><br>
+            Address:<br>
+            <input type="text" placeholder="address" name="address"><br>
+            Status:<br>
+            <input type="text" placeholder="Status:0 or 1" name="status"><br>
+            StartTime:<br>
+            <input type="text" placeholder="start_time" name="start_time"><br>
+            <button>添加发布会</button>
+            {{ status }}
+            {{ message }}
+        </form>
+    </div>
+    <div>
+        <p>添加Guest：</p>
+        <form action="/api/add_guest/" method="post">
+            realname:<br>
+            <input type="text" placeholder="realname" name="realname"><br>
+            phone:<br>
+            <input type="text" placeholder="phone" name="phone"><br>
+            email:<br>
+            <input type="text" placeholder="email" name="email"><br>
+            sign:<br>
+            <input type="text" placeholder="sign:0 or 1" name="sign"><br>
+            event_id:<br>
+            <input type="text" placeholder="event_id" name="eid"><br>
+            <button>添加Guest</button>
+        </form>
+    </div>
+</body>
+</html>
